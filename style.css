@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Karla:wght@300;400;700&family=Open+Sans:wght@300;400&family=Overpass:wght@300;400;700&family=Poppins:wght@200;300;400;600&family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --primary-color: rgb(188, 150, 28);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Html, body {
+    background-color: aliceblue;
+    font-family: 'Overpass', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+/* HEADER START */
+
+header {
+    /* background-color: #669999; */
+    background-color: var(--primary-color);
+}
+.nav_bar {
+    max-width: 85rem;
+}
+
+.nav_logo {
+    width: 12rem;
+}
+
+/* HEADER END */
+
+/* HERO SECTION START */
+
+.hero_sec {
+    background-color: aliceblue;
+    position: relative;
+}
+
+.hero_sec img {
+    width: 78.7%;
+    float: right;
+}
+
+.hero_sec::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 10rem;
+    bottom: 0;
+    background-image: linear-gradient(to left, #33333300 30%, #ffffffaa 50%, #eee 65%);
+    ;
+    z-index: 1;
+}
+
+.hero_sec::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero_description {
+    border-left: 3px solid hsl(45, 100%, 51%);
+    margin-bottom: 10rem;
+    padding: 0;
+    padding-left: 2rem;
+    transition: 1s;
+}
+
+.hero_description h1 {
+    font-size: 5rem;
+}
+
+.hero_btn:hover {
+    background-color: var(--primary-color) !important;
+    color: white;
+}
+
+.slider_btn_right {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 17rem;
+    margin-right: 2rem;
+}
+
+.slider_btn_left {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 17rem;
+    margin-left: 2rem;    
+}
+/* HERO SECTION END */
+
+/* SERVICE SECTION START */
+
+.service_sec {
+    max-width: 68rem;
+    padding-bottom: 6rem;
+}
+
+.service_info h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.service_card {
+    transition: .4s all;
+    -webkit-transition: .4s all;
+    -moz-transition: .4s all;
+    -ms-transition: .4s all;
+    -o-transition: .4s all;
+}
+
+.service_card:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.service_card_info {
+    background-color: var(--primary-color);
+    margin-bottom: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SERVICE SECTION END */
+
+/* TEXTILE SECTION START */
+
+.textile_head {
+    background: url(Img/Textile-sec.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+
+.textile_info {
+    padding-top: 4rem;
+    margin-left: 8rem;
+}
+.textile_info h1 {
+    font-size: 4rem;
+}
+
+.text-success {
+    color: var(--primary-color)  !important;
+}
+
+/* TEXTILE SECTION END */
+
+/* TEXTILE MATERIAL SECTION START */
+
+.t_material {
+    width: 70rem;
+    margin: auto ;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.t_material_card {
+    width: 15rem !important;
+    transition: .4s all ease;
+    -webkit-transition: .4s all ease;
+    -moz-transition: .4s all ease;
+    -ms-transition: .4s all ease;
+    -o-transition: .4s all ease;
+    overflow: hidden;
+}
+
+.t_material_card:hover {
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.558) !important;
+    border: none;
+    overflow: hidden;
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+
+/* TEXTILE MATERIAL SECTION END */
+
+/* MARKET SECTOR START */
+
+.market_section {
+    background-color: rgba(46, 139, 86, 0.1);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.market_container {
+    max-width: 70rem;
+    margin: auto;
+}
+
+.market_info {
+    bottom: 1rem;
+    height: 3rem;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+    background-color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.market_info span {
+    height: 100%;
+    background: var(--primary-color);
+    padding-top: .8rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+}
+
+/* MARKET SECTOR END */
+
+/* ABOUT SECTION START */
+
+.about_container {
+    width: 80rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.about_card {
+    background-color: aliceblue !important;
+}
+
+/* Bootstrap class */
+.card-header {
+    background-color: aliceblue !important;
+}
+
+.about_header {
+    color: var(--primary-color);
+}
+
+.about_btn {
+    padding: .8rem 1.8rem;
+    background-color: var(--primary-color) !important;
+}
+
+.about_btn2 {
+    color: var(--primary-color);
+    background-color: aliceblue;
+    border: 2px solid var(--primary-color);
+}
+
+.about_btn2:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.about_btn2:focus {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.about_icons {
+    color: var(--primary-color);
+}
+
+.about_h3 {
+    color: var(--primary-color);
+}
+
+/* ABOUT SECTION END */
+
+/* FOOTER START */
+
+.footer_div {
+    width: 80rem;
+    margin: auto;
+}
+
+.footer_div1 h1 {
+    color: var(--primary-color) !important;
+}
+
+.bg-warning {
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    -ms-transition: .5s all ease;
+    -o-transition: .5s all ease;
+}
+
+.bg-warning:hover {
+    background-color: black !important;
+}
+
+.text-warning {
+    color: var(--primary-color) !important;
+}
+
+.footer_bottom {
+    background-color: var(--primary-color);
+}
+
+.footer_div h6 a:hover {
+    color: rgb(9, 9, 75) !important;
+}
+
+/* FOOTER END */
+
+/* RESPONSIVE PART START */
+
+@media only screen and (max-width: 992px) {
+    /* HERO SECTION */
+    .slider_btn_left {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 6.5rem;
+        margin-left: 1rem;
+        opacity: .4;
+    }
+
+    .slider_btn_right {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 6.5rem;
+        margin-right: 1rem;
+        opacity: .4;
+    }
+
+    .carousel_img {
+        height: 15rem;
+    }
+
+    .hero_description {
+        border-left: 3px solid hsl(45, 100%, 51%);
+        margin-bottom: 0rem;
+        margin-left: 1rem;
+        padding: 0;
+        padding-left: 1rem;
+        transition: 1s;
+        width: 60% !important;
+    }
+
+    .hero_description h4 {
+        font-size: 1.2rem;
+    }
+
+    .hero_description h1 {
+        font-size: 1rem;
+        color: var(--primary-color);
+    }
+
+    .hero_description p {
+        font-size: .6rem;
+        width: 100% !important;
+    }
+
+    .hero_btn {
+        width: 7rem;
+        height: 2.5rem;
+        padding: 0 !important;
+    }
+
+    /* SERVICE SECTION */
+    .service_info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        margin-top: .6rem !important;
+    }
+
+    .service_card_main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .service_card_info {
+        font-size: 1rem;
+        height: 3rem;
+    }
+
+    /* TEXTILE SECTION */
+    .textile_info {
+        padding-top: 2rem;
+        margin-left: 2rem;
+    }
+    .textile_info h1 {
+        font-size: 2rem;
+        width: 170%;
+    }
+
+    .textile_info button {
+        padding: .5rem 1rem !important;
+    }
+
+    /* TEXTILE MATERIAL SECTION */
+    .t_material {
+        width: 100%;
+        margin: auto ;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+    }
+
+    .service_info h2 {
+        font-size: 2rem;
+    }
+
+    .t_material_body {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .t_material_card {
+        width: 20rem !important;
+    }
+
+    /* MARKET SECTOR SECTION */
+    .market_container {
+        max-width: 100% !important;
+        margin: auto;
+    }
+
+    .market_section {
+        padding-top: 2rem;
+    }
+
+    .market_sec_body {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* ABOUT SECTION */
+    .about_container {
+        width: 90%;
+        margin: auto;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        flex-direction: column;
+    }
+
+    .about_div1, .about_div2 {
+        width: 100% !important;
+    }
+
+    .about_div1_body {
+        margin-top: 1.5rem !important;
+    }
+
+    .about_btn {
+        padding: .6rem 1rem;
+    }
+
+    .about_div2 {
+        margin-left: 0 !important;
+    }
+
+    .about_icons {
+        margin-right: 2rem !important;
+    }
+
+    .about_div2 p {
+        width: 90%;
+        font-size: .9rem;
+    }
+
+    /* FOOTER */
+    .footer_div {
+        flex-direction: column;
+        width: 85%;
+        margin: auto;
+    }
+
+    .footer_div1, .footer_div2 {
+        width: 100% !important;
+    }
+
+    .footer_div2 {
+        align-items: center !important;
+        margin-top: 2.5rem;
+    }
+
+    .footer_div2 h2 {
+        color: var(--primary-color) !important;
+    }
+
+}
