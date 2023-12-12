@@ -371,8 +371,8 @@ header {
 
     .hero_btn {
         width: 7rem;
-        height: 2.5rem;
-        padding: 0 !important;
+
+        padding: .5rem 0 !important;
     }
 
     /* SERVICE SECTION */
@@ -432,6 +432,10 @@ header {
     .market_container {
         max-width: 100% !important;
         margin: auto;
+    }
+
+    .market_info {
+        font-size: 1.3rem;
     }
 
     .market_section {
